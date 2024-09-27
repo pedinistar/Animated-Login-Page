@@ -185,9 +185,14 @@ input[type="text"], input[type="password"] {
     width: 100%;
     padding: 1rem;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #3f8137;
     border-radius: 0.3rem;
     box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border: 1px solid #4ab93d;
+    outline: none;
 }
 
 .remember-me {
@@ -259,12 +264,17 @@ input[type="text"], input[type="password"] {
 .login-button {
     width: 100%;
     padding: 10px;
-    background-color: #cccccc;
+    background-color: #4ab93d;
     color: white;
     border: none;
     border-radius: 2rem;
     cursor: pointer;
     font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.login-button:hover {
+    background-color: #3f8137;
 }
 
 .forgot-links {
@@ -294,5 +304,3 @@ input[type="text"], input[type="password"] {
     font-size: 10px;
     margin-bottom: 0rem;
 }
-
-
