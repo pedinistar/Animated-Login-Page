@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="background-image">
+            <img src="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg" alt="Background Image">
+        </div>
+        <div class="logo-animation">
+            <img src="assets/logo.svg" alt="Regions Logo">
+        </div>
+        <div class="login-form">
+            <div class="header">
+                <div class="logo">
+                    <img src="assets/logo.svg" width='10px' height="10px" alt="Regions Logo">
+                    <div class="logo-text">
+                        <h2>REGIONS</h1>
+                        <h4>Mortgage</h5>
+                    </div>
+                </div>
+                <div class="enroll-container">
+                    <a href="#" class="enroll-button">Enroll Now</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Access to loan</a>
+                        <a href="#">Pay mortgage online</a>
+                        <a href="#">Mortgage statements</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h1>Welcome Back</h1>
+                <p>Sign in to your Regions MyMortgage account.</p>
+                <form id="loginForm">
+                    <input type="text" id="onlineId" placeholder="Online ID" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <div class="remember-me">
+                        <input type="checkbox" id="rememberMe">
+                        <label for="rememberMe">Remember me</label>
+                    </div>
+                    <button type="submit" class="login-button" id="loginButton">Login</button>
+                </form>
+                <div class="forgot-links">
+                    <a href="#">Forgot Online ID?</a>
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Equal Housing Lender • Member FDIC</p>
+                <p>©2023 Regions Financial Corporation. All Rights Reserved. 1 (800) REGIONS</p>
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
